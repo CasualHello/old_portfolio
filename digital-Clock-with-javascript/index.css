@@ -35,9 +35,9 @@ body {
 
 .switch {
   position: absolute;
-  top: 70%;
-  left: 49%;
-  transform: translate(-49%, -70%);
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
   background-color: var(--switch-color);
   border: none;
   padding: 16px 32px;
