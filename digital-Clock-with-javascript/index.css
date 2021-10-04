@@ -1,0 +1,75 @@
+:root {
+  --background-color: #fffaf0;
+  --clock-body-color:#32675e;
+  --switch-color:#b3bca8;
+  --switch-text-color: black;
+}
+
+
+.dark-mode {
+--background-color:#c7c2b9;
+--clock-body-color: #332f28;
+--switch-color:#605c54;
+--switch-text-color: white;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:var(--background-color)
+}
+
+.clock-body {
+  background-color: var(--clock-body-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px 32px;
+  width: 40%;
+}
+
+.switch {
+  position: absolute;
+  top: 70%;
+  left: 49%;
+  transform: translate(-49%, -70%);
+  background-color: var(--switch-color);
+  border: none;
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: var(--switch-text-color)
+  
+}
+
+.clock-window {
+  background-color: white;
+  padding: 32px 62px;
+  border-radius: 8px;
+}
+
+.days-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.clock-display {
+  font-size: 32px;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="site site--dark">
+      <div class="header__card">
+        <div class="header-wrap">
+          <h2 class="header__title">Social Media Dashboard</h2>
+          <h5 class="followers__count">Total Followers: 23,004</h5>
+          <div class="toogle__container">
+            <h5 class="toogle__mode">Dark Mode</h5>
+            <label class="switch">
+              <input type="checkbox" id="dark-mode-checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="social__card-wrap">
+        <div class="social__card social__card--facebook social__card--up">
+          <div class="social__user-name">
+            <img
+              class="icon"
+              src="./icons/icon-facebook.svg"
+              alt="icon-facebook"
+            />
+            <p class="user-name">@nathanf</p>
+          </div>
+          <div>
+            <h3 class="follower__num">1987</h3>
+            <p class="follower follower--light follower--dark">FOLLOWERS</p>
+          </div>
+          <div class="follower-statistic">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">12 Today</p>
+          </div>
+        </div>
+        <div class="social__card social__card--twitter">
+          <div class="social__user-name">
+            <img
+              class="icon"
+              src="./icons/icon-twitter.svg"
+              alt="icon-twitter"
+            />
+            <p class="user-name">@nathanf</p>
+          </div>
+          <div>
+            <h3 class="follower__num">1044</h3>
+            <p class="follower">FOLLOWERS</p>
+          </div>
+          <div class="follower-statistic">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">99 Today</p>
+          </div>
+        </div>
+        <div class="social__card social__card--instagram">
+          <div class="social__user-name">
+            <img
+              class="icon"
+              src="./icons/icon-instagram.svg"
+              alt="icon-instagram"
+            />
+            <p class="user-name">@realnathanf</p>
+          </div>
+          <div>
+            <h3 class="follower__num">11k</h3>
+            <p class="follower">FOLLOWERS</p>
+          </div>
+          <div class="follower-statistic">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">1099 Today</p>
+          </div>
+        </div>
+        <div class="social__card social__card--youtube">
+          <div class="social__user-name">
+            <img src="./icons/icon-youtube.svg" alt="icon-youtube" />
+            <p class="user-name">Nathan F.</p>
+          </div>
+          <div>
+            <h3 class="follower__num">8239</h3>
+            <p class="follower">SUBSCRIBERS</p>
+          </div>
+          <div class="follower-statistic">
+            <img src="./icons/icon-down.svg" alt="icon-down" />
+            <p class="stat stat--red">144 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__overview">
+        <h3 class="overview__title">Overview - Today</h3>
+      </div>
+      <div class="overview-wrap">
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Page Views</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-facebook.svg" alt="icon-facebook" />
+          </div>
+          <div>
+            <p class="overview__num">87</p>
+          </div>
+          <div class="overview__stats">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">3%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Likes</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-facebook.svg" alt="icon-facebook" />
+          </div>
+          <div>
+            <p class="overview__num">52</p>
+          </div>
+
+          <div class="overview__stats">
+            <img src="./icons/icon-down.svg" alt="icon-down" />
+            <p class="stat stat--red">2%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Likes</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-instagram.svg" alt="icon-instagram" />
+          </div>
+          <div>
+            <p class="overview__num">5462</p>
+          </div>
+          <div class="overview__stats">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">2257%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Profile Views</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-instagram.svg" alt="icon-instagram" />
+          </div>
+          <div>
+            <p class="overview__num">52k</p>
+          </div>
+          <div class="overview__stats">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">1375%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Retweets</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-twitter.svg" alt="icon-twitter" />
+          </div>
+          <div>
+            <p class="overview__num">117</p>
+          </div>
+
+          <div class="overview__stats">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">303%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Likes</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-twitter.svg" alt="icon-twitter" />
+          </div>
+          <div>
+            <p class="overview__num">507</p>
+          </div>
+
+          <div class="overview__stats">
+            <img src="./icons/icon-up.svg" alt="icon-up" />
+            <p class="stat stat--green">553%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Likes</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-youtube.svg" alt="icon-youtube" />
+          </div>
+          <div>
+            <p class="overview__num">107</p>
+          </div>
+
+          <div class="overview__stats">
+            <img src="./icons/icon-down.svg" alt="icon-down" />
+            <p class="stat stat--red">19%</p>
+          </div>
+        </div>
+        <div class="overview__card">
+          <div class="text-upper-left-container">
+            <p class="overview__text">Total Views</p>
+          </div>
+          <div class="icon-container">
+            <img src="./icons/icon-youtube.svg" alt="icon-youtube" />
+          </div>
+          <div>
+            <p class="overview__num">1407</p>
+          </div>
+
+          <div class="overview__stats">
+            <img src="./icons/icon-down.svg" alt="icon-down" />
+            <p class="stat stat--red">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(() => {
+        $("#dark-mode-checkbox").change(function () {
+          $(".site").toggleClass("site--dark");
+        });
+      });
+    </script>
+  </body>
+</html>

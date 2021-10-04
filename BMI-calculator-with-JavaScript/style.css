@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+background-color: #cffcdd;
+  color:#06511c;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h3 {
+  text-align: center;
+  margin: 32px 0;
+  font-size: 32px;
+  
+}
+
+b {
+  color: #11e952;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,auto);
+  justify-content: center;
+  gap:  0px 30px;
+  padding: 32px;
+}
+
+form, .norm-container {
+  background-color: white;
+  border-radius: 6px;
+box-shadow: 0px 10px 16px 0px rgba(0, 0, 0,0.1);
+}
+
+
+form {
+font-size: 15px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+align-self: center;
+grid-area:  1 / 1 / 1 / 1 ;
+
+}
+
+.form__row-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-bottom: 32px;
+}
+
+.form__row-two {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+  margin-bottom: 32px;
+}
+
+.text-input {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #0db53f;
+  outline: none;
+  padding: 5px 10px;
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.text-input:focus{
+outline: 1px solid #0db53f;
+}
+
+
+
+.form__row-one-text {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+
+.norm-container {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  grid-area:  2/ 2 / 1 / 2;
+}
+
+.norm-slot {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+margin: 16px 0px;
+
+border-bottom: rgb(179, 179, 179) 1px solid;
+
+}
+
+.norm-slot:last-child {
+  border-bottom: none;
+}
+
+.female-norms {
+  grid-area: 1 / 2/ 1 / 4;
+}
+
+.age {
+  grid-area: 2 / 1 / 2 /1;
+}
+
+.male-norms {
+  grid-area:  3 / 2 / 3 / 4;
+  margin-bottom: 16px;
+ 
+}
+
+.fa-female, .fa-male {
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.fa-female {
+  color: hotpink;
+}
+
+.fa-male {
+  color: blue;
+}
+
+.underweight, .normal-weight, .overweight, .obesity {
+  padding: 4px;
+  font-size: 12px;
+}
+
+.underweight {
+  background-color: hsl(174, 88%, 61%);
+  
+}
+
+.normal-weight {
+  background-color: rgb(95, 240, 138);
+}
+
+.overweight {
+  background-color: yellow;
+}
+
+.obesity {
+  background-color: orange;
+}
+
+.circle-input {
+  display: none;
+}
+
+.check {
+  border: 1px solid #0db53f;
+  padding:16px 30px 16px 30px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+
+}
+
+
+
+.checked-icon, .circle-icon {
+  position: absolute;
+  left: 10px;
+}
+
+.checked-icon {
+  opacity: 0;
+}
+
+
+
+.circle-input:checked ~ .check .circle-icon {
+  opacity: 0;
+}
+
+.circle-input:checked ~ .check .checked-icon {
+  opacity: 1;
+}
+
+.circle-input:checked ~ .check.check--male {
+  color: blue;
+  font-weight: bold;
+ 
+
+}
+.circle-input:checked ~ .check.check--female {
+  color: hotpink;
+  font-weight: bold;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 32px;
+ 
+}
+
+button  {
+  width: 50%;
+  background-color:#0db53f;
+	border-radius:38px;
+	cursor:pointer;
+	color:white;
+  font-family: 'Roboto', sans-serif;
+	font-size:20px;
+font-weight: 500;
+	padding:16px;
+  border: none;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  position:relative;
+	top:3px;
+  opacity: 1;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/solid.min.css"
+  /> 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/regular.min.css"
+/> 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+/>
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+    <div class="main-container">
+      <form action="" class="form" id="form">
+        <div class="form__row-one">
+          <div class="container-input">
+         <div class="form__row-one-text">Age</div>
+          <input type="number" class="text-input" name="age" id="age" autocomplete="out" required />
+        </div>
+        <div class="container-input">
+          <div class="form__row-one-text">Height (cm)</div>
+          <input type="number" class="text-input"  name="height" id="height" autocomplete="off" required />
+        </div>
+        <div class="container-input">
+          <div class="form__row-one-text">Weight (kg)</div>
+          <input
+            type="number"
+            class="text-input" 
+            id="weight"
+            name="weight"
+            autocomplete="off"
+            required
+          />
+        </div>
+        </div>
+        <div class="form__row-two">
+          <div>
+          <label>
+            <input  class="circle-input" type="radio" name="gender" id="male">
+            <div class="check check--male">
+              <i class="circle-icon far fa-circle"></i>
+              <i class="checked-icon fas fa-check-circle"></i>
+              
+            Male
+            </div>
+          </div>
+          <div >
+          <label>
+            <input class="circle-input" type="radio" name="gender" id="female" />
+            <div class="check check--female">
+              <i class="circle-icon  far fa-circle"></i>
+              <i class=" checked-icon fas fa-check-circle"></i>
+              Female</div>
+          </label>
+        </div>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+      <div class="result">
+      </div>
+      <div class="norm-container">
+       <div class="norm-slot">
+         <div class="age">
+           18 - 24  age
+         </div>
+         <div class="female-norms">
+          <i class="fas fa-female"></i><span class="underweight"> &lt;19 </span><span class="normal-weight">19 - 24</span><span class="overweight">25 - 28</span><span  class="obesity"> &gt;28</span>
+         </div>
+         <div class="male-norms">
+          <i class="fas fa-male"></i><span class="underweight"> &lt;20 </span><span class="normal-weight">20 - 25</span><span class="overweight">26 - 29</span><span  class="obesity"> &gt;29</span>
+         </div>
+       </div>
+       <div class="norm-slot">
+        <div class="age">
+          25 - 34  age
+        </div>
+        <div class="female-norms">
+         <i class="fas fa-female"></i><span class="underweight"> &lt;20 </span><span class="normal-weight">20 - 25</span><span class="overweight">26 - 29</span><span  class="obesity"> &gt;29</span>
+        </div>
+        <div class="male-norms">
+         <i class="fas fa-male"></i><span class="underweight"> &lt;21 </span><span class="normal-weight">21 - 26</span><span class="overweight">27 - 30</span><span  class="obesity"> &gt;30</span>
+        </div>
+      </div>
+      <div class="norm-slot">
+        <div class="age">
+          35 - 44  age
+        </div>
+        <div class="female-norms">
+         <i class="fas fa-female"></i><span class="underweight"> &lt;21 </span><span class="normal-weight">21 - 26</span><span class="overweight">27 - 30</span><span  class="obesity"> &gt;30</span>
+        </div>
+        <div class="male-norms">
+         <i class="fas fa-male"></i><span class="underweight"> &lt;22 </span><span class="normal-weight">22 - 27</span><span class="overweight">28 - 31</span><span  class="obesity"> &gt;31</span>
+        </div>
+      </div>
+      <div class="norm-slot">
+        <div class="age">
+          45 - 54  age
+        </div>
+        <div class="female-norms">
+         <i class="fas fa-female"></i><span class="underweight"> &lt;22 </span><span class="normal-weight">22 - 27</span><span class="overweight">28 - 31</span><span  class="obesity"> &gt;31</span>
+        </div>
+        <div class="male-norms">
+         <i class="fas fa-male"></i><span class="underweight"> &lt;23 </span><span class="normal-weight">23 - 28</span><span class="overweight">29 - 32</span><span  class="obesity"> &gt;32</span>
+        </div>
+      </div>
+      <div class="norm-slot">
+        <div class="age">
+          55 - 64  age
+        </div>
+        <div class="female-norms">
+         <i class="fas fa-female"></i><span class="underweight"> &lt;23 </span><span class="normal-weight">23 - 28</span><span class="overweight">29 - 32</span><span  class="obesity"> &gt;32</span>
+        </div>
+        <div class="male-norms">
+         <i class="fas fa-male"></i><span class="underweight"> &lt;24 </span><span class="normal-weight">24 - 29</span><span class="overweight">30 - 33</span><span  class="obesity"> &gt;33</span>
+        </div>
+      </div>
+      <div class="norm-slot">
+        <div class="age">
+          65+ age
+        </div>
+        <div class="female-norms">
+         <i class="fas fa-female"></i><span class="underweight"> &lt;24 </span><span class="normal-weight">24 - 29</span><span class="overweight">30 - 33</span><span  class="obesity"> &gt;33</span>
+        </div>
+        <div class="male-norms">
+         <i class="fas fa-male"></i><span class="underweight"> &lt;25 </span><span class="normal-weight">25 - 30</span><span class="overweight">31 - 34</span><span  class="obesity"> &gt;34</span>
+        </div>
+      </div>
+      </div>
+    </div>
+   
+    <script src="main.js"></script>
+  </body>
+</html>

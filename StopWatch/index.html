@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+
+      html {
+        height: 100vh;
+      }
+
+      body {
+        height: 100%;
+        background: linear-gradient(
+          87deg,
+          rgba(246, 237, 217, 1) 14%,
+          rgba(0, 98, 160, 1) 91%
+        );
+        background-repeat: no-repeat;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 300px auto;
+        color: black;
+        text-align: center;
+      }
+      button {
+        border-style: solid;
+        color: white;
+        background-color: rgba(0, 98, 160, 1);
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        padding: 18px 10px;
+        width: 180px;
+        margin: 10px;
+        transition: 0.4s;
+      }
+
+      button:hover {
+        outline: solid 1px black;
+        background: linear-gradient(
+          87deg,
+          rgba(0, 98, 160, 1) 14%,
+          rgba(246, 237, 217, 1) 91%
+        );
+        color: black;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 2.6em;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+
+      p {
+        font-weight: 100;
+        font-size: 2em;
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Stopwatch</h1>
+      <div>
+        <p><span id="sec">00</span>:<span id="milsec">00</span></p>
+        <button id="button-start">Start</button>
+        <button id="button-stop">Stop</button>
+        <button id="button-reset">Reset</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  padding: 16px 32px;
+}
+
+.flex {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 64px 23px 64px 23px;
+}
+.hero span {
+  font-weight: 200;
+  text-align: center;
+}
+
+.hero h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-weight: 400;
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 11px 30px -6px rgba(150, 170, 180, 0.5);
+  margin: 16px 23px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 16px 24px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.card__title {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card__text {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 32px;
+}
+
+.card_icon {
+  margin-left: auto;
+  padding-top: 16px;
+}
+
+@media (min-width: 1048px) {
+  .card {
+    height: 100%;
+    padding: 1em;
+    margin: 0;
+  }
+  .flex {
+    margin: none;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1048px) {
+  .grid-wrapper {
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 3em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.card--blue {
+  border-top: solid 4px hsl(180, 62%, 55%);
+}
+
+@media (min-width: 1048px) {
+  .card--blue {
+    grid-area: 2 / 1 / 4 / 2;
+  }
+}
+
+.card--red {
+  border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+@media (min-width: 1048px) {
+  .card--red {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+}
+.card--orange {
+  border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+@media (min-width: 1048px) {
+  .card--orange {
+    grid-area: 3/ 2 / 5 / 3;
+  }
+}
+
+.card--darkblue {
+  border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1048px) {
+  .card--darkblue {
+    grid-area: 2 / 3 / 4 / 4;
+  }
+}
+
+

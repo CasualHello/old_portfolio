@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: rgb(224, 242, 248);
+}
+
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: white;
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 1px 17px -3px rgba(0, 0, 0, 0.1); 
+box-shadow: 0px 1px 17px -3px rgba(0, 0, 0, 0.1);
+}
+
+.pop__up-hide {
+  display: none;
+}
+
+.pop_up--green {
+background-color: rgba(0, 128, 0, 0.3);
+color: green;
+}
+
+.pop_up--red {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: red;
+}
+
+.info-pop-up {
+  letter-spacing: 6px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+ 
+}
+
+h2 {
+  margin-bottom: 32px;
+  font-size: 32px;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 75%;
+  padding: 6px;
+float: left;
+	font-size: 16px;
+  background-color: rgba(211, 211, 211, 0.3);
+  
+}
+
+.sumbit-button {
+  padding: 6px;
+  width: 25%;
+  background:lightblue;
+  color:black;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+  float: left;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-element {
+  list-style-type: none;  
+ display: flex;
+ margin-bottom: 8px;
+}
+
+
+.list-container {
+margin-bottom: 32px;
+width: 100%;
+font-size: 14px;
+transition: 0.3s;
+}
+
+.list-element {
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.list-element:hover {
+  color: rgb(138, 208, 231);
+ background-color: rgba(211, 211, 211, 0.3);
+}
+
+.icon-container {
+
+margin-left: auto;
+ gap: 8px;
+}
+
+.trash--red {
+  color: rgba(255, 0, 0, 0.8);
+  opacity: 1;
+  cursor: pointer
+}
+
+.edit--green {
+  color: rgba(0, 128, 0, 0.8);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.trash--red:hover, .edit--green:hover {
+  opacity: 0.7;
+}
+
+.clear-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 0, 0, 0.6);
+  letter-spacing: 6px;
+}
+
+.clear-button-hide {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
