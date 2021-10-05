@@ -57,7 +57,9 @@ transition: 0.3s;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 32px;
-  gap: 32px
+  gap: 32px;
+  max-width: 1240px;
+    margin: 0 auto;
 }
 
 .menu-item {
