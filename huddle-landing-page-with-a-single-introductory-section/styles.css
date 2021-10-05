@@ -29,7 +29,7 @@ body {
   .card {
     padding: 32px 64px;
     display: grid;
-    grid-template: auto auto auto 1fr / auto auto;
+    grid-template: auto auto auto / auto auto;
     background-image: url(./photos/bg-desktop.svg);
     height: 100%;
     background-position: center;
@@ -153,6 +153,7 @@ body {
   margin: 0 5px;
   height: 32px;
   width: 32px;
+  text-decoration: none;
 }
 
 .circle-icon i {
