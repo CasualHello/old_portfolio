@@ -23,10 +23,9 @@ h2 {
 
 .about-container {
 padding: 64px;
- display: grid;
- grid-template-columns: auto auto;
- gap: 32px;
- 
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
 
 
