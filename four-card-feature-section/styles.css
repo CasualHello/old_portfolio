@@ -76,7 +76,7 @@ body {
   }
   .flex {
     margin: none;
-    max-width: none;
+    max-width: 1240px;
   }
 }
 
