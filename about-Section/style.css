@@ -43,6 +43,7 @@ img {
 }
 
 button {
+  cursor: pointer;
   background-color: hsl(212, 33%, 89%);
   outline: none;
 border: none;
