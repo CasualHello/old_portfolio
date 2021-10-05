@@ -22,43 +22,69 @@
 
       body {
         min-height: 100vh;
-        background: linear-gradient(
-          87deg,
-          rgba(246, 237, 217, 1) 14%,
-          rgba(0, 98, 160, 1) 91%
-        );
-        background-repeat: no-repeat;
+        background-color: #e4e7eb;
       }
+
       .wrapper {
+        padding: 32px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 300px auto;
         color: black;
         text-align: center;
+        background-color: #f5f7fa;
+        max-width: 40em;
+        border-radius: 8px;
+        height: 400px;
       }
+
+      .button__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
       button {
-        border-style: solid;
-        color: white;
-        background-color: rgba(0, 98, 160, 1);
-        border: none;
+        text-transform: uppercase;
+        color: #07818f;
+        letter-spacing: 2px;
+        border: 2px solid #07818f;
+        border-radius: 2px;
+        background-color: #f5f7fa;
         text-decoration: none;
         cursor: pointer;
         font-size: 1.2em;
         padding: 18px 10px;
         width: 180px;
         margin: 10px;
-        transition: 0.4s;
+        text-align: center;
+        transition: all 0.5s;
+        position: relative;
+      }
+
+      button span {
+        position: relative;
+        z-index: 2;
+      }
+
+      button:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #07818f;
+        transition: all 0.5s;
       }
 
       button:hover {
-        outline: solid 1px black;
-        background: linear-gradient(
-          87deg,
-          rgba(0, 98, 160, 1) 14%,
-          rgba(246, 237, 217, 1) 91%
-        );
-        color: black;
+        color: white;
+      }
+
+      button:hover::after {
+        width: 100%;
       }
 
       h1 {
@@ -67,12 +93,14 @@
         font-size: 2.6em;
         text-transform: uppercase;
         margin-bottom: 32px;
+        color: #1f2933;
       }
 
       p {
-        font-weight: 100;
+        font-weight: 400;
         font-size: 2em;
         margin-bottom: 32px;
+        color: #1f2933;
       }
     </style>
   </head>
@@ -81,9 +109,11 @@
       <h1>Stopwatch</h1>
       <div>
         <p><span id="sec">00</span>:<span id="milsec">00</span></p>
-        <button id="button-start">Start</button>
-        <button id="button-stop">Stop</button>
-        <button id="button-reset">Reset</button>
+        <div class="button__container">
+          <button id="button-start"><span>Start</span></button>
+          <button id="button-stop"><span>Stop</span></button>
+          <button id="button-reset"><span>Reset</span></button>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
