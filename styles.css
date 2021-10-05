@@ -18,31 +18,27 @@ gap:32px 32px;
 }
 
 .card{
- display: flex;
- flex-direction: column;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
  position: relative;
- width: 350px;
- margin-bottom: 16px;
 box-shadow: 1px 1px 31px -10px rgba(66, 68, 90, 0.5);
+grid-template-rows: max-content;
+border-radius: 8px;
+overflow: hidden;
 }
 
 .picture {
  object-fit: cover;
- height: 350px;
- width: 350px;
- border-top-right-radius: 8px;
- border-top-left-radius: 8px;
+ max-height: 410px;
+ width: 100%;
 }
 
 .card__description {
  display: flex;
  flex-direction: column;
  height: 100%;
- width: 350px;
  background-color: white;
 padding: 40px 24px;
-border-bottom-right-radius: 8px;
-border-bottom-left-radius: 8px;
 }
 
 h2 {
@@ -54,7 +50,9 @@ p {
  line-height: 28px;
 }
 
-button {
+a {
+ text-align: center;
+ text-decoration: none;
  background-color: white;
  border: solid 1px blue;
  padding: 16px 32px;
@@ -68,14 +66,14 @@ letter-spacing: 2px;
 margin-top: auto;
 }
 
-button:hover {
+a:hover {
 background-color: blue;
 color:white;
 position:relative;
 top:3px;
 }
 
-button:active {
+a:active {
  position:relative;
 top:3px;
 }
