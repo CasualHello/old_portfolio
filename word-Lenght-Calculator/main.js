@@ -5,17 +5,17 @@ const popUp = document.querySelector(".pop__up");
 
 const calculateLetters = () => {
   const textInputValue = textInput.value;
+  if (textInputValue === "") {
+    return showPopUp("Empty Input");
+  }
   if (!isOnlyAlphabetical(textInputValue)) {
     showPopUp("Please input alphabet characters only");
-    countPlaceholder.textContent = "";
+    countPlaceholder.innerHTML = "<br>";
     return;
   }
   const lenghtOfWord = textInputValue.length;
   textInput.value = "";
   countPlaceholder.textContent = lenghtOfWord;
-  if (textInputValue === "") {
-    return showPopUp("Empty Input");
-  }
 };
 
 const showPopUp = (text) => {
