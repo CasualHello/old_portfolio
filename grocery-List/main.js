@@ -8,7 +8,6 @@ const makeElementOfList = (productName) => {
   const listElement = document.createElement("li");
   listElement.classList.add("list-element");
   listElement.innerHTML = `${productName}<div class="icon-container">
-  <i class="fas fa-edit edit--green"></i>
   <i class="fas fa-trash trash--red"></i>`;
   return listElement;
 };
@@ -25,15 +24,10 @@ const addToList = () => {
   showPopUp("Item Added To The List", "pop_up--green");
   const removeButton = productElement.querySelector(".trash--red");
   removeButton.addEventListener("click", removeElementFromList(productElement));
-  const editButton = productElement.querySelector(".edit--green");
-  editButton.addEventListener("click", changeElementOfList);
+  
 };
 
-const changeElementOfList = (productInputValue, productElement) => {
-  sumbitButton.textContent = "Edit";
-  productInput.textContent = productInputValue.value;
-  console.log(productElement.value);
-};
+
 
 const showPopUp = (text, type) => {
   popUp.classList.remove("hidden", "pop_up--green", "pop_up--red");

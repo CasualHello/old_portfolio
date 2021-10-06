@@ -34,10 +34,7 @@ box-shadow: 0px 1px 17px -3px rgba(0, 0, 0, 0.1);
   display: none;
 }
 
-.pop_up--green {
-background-color: rgba(0, 128, 0, 0.3);
-color: green;
-}
+
 
 .pop_up--red {
   background-color: rgba(255, 0, 0, 0.3);
@@ -186,11 +183,6 @@ margin-left: auto;
   cursor: pointer
 }
 
-.edit--green {
-  color: rgba(0, 128, 0, 0.8);
-  opacity: 1;
-  cursor: pointer;
-}
 
 .trash--red:hover, .edit--green:hover {
   opacity: 0.7;
