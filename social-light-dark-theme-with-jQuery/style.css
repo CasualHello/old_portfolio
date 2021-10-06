@@ -398,6 +398,7 @@ input:checked + .slider:before {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px 42px;
+  margin-bottom: 16px;
   border-radius: 6px;
   align-items: center;
   padding: 26px 42px;
