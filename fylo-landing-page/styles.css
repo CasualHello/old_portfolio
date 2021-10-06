@@ -64,6 +64,7 @@ max-width: 1240px;
 }
 
 .navbar__element a {
+  transition: 0.3s;
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   margin-left: auto;
@@ -414,6 +415,7 @@ input:focus {
 
 .card__link a {
   padding-bottom: 16px;
+  transition: 0.3s;
 }
 
 .card__link a,
@@ -421,6 +423,10 @@ input:focus {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-weight: 400;
+}
+
+.card__link a:hover {
+  color: hsl(198, 60%, 50%);
 }
 
 .social__link {
@@ -431,7 +437,10 @@ input:focus {
   justify-content: center;
 }
 
+
+
 .social__link a {
+  transition: 0.3s;
   border: white 0.5px solid;
   border-radius: 50%;
   margin: 0 5px;
@@ -440,6 +449,12 @@ input:focus {
   display: flex;
 }
 
+.social__link a:hover{
+   border:hsl(198, 60%, 50%) solid 0.5px; 
+   color: hsl(198, 60%, 50%);;
+}
+
 .social__link i {
   margin: auto;
 }
+
