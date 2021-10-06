@@ -16,6 +16,28 @@ const quotesArray = [
       "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
     name: "Albert Einstein",
   },
+  {
+    quote:
+      "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+    name: "J.K. Rowling",
+  },
+  {
+    quote: "Love all, trust a few, do wrong to none.",
+    name: "William Shakespeare",
+  },
+  {
+    quote: "A day without sunshine is like, you know, night.",
+    name: "Steve Martin ",
+  },
+  {
+    quote: "It is never too late to be what you might have been.",
+    name: "George Eliot",
+  },
+  {
+    quote: `You love me. Real or not real?"
+      I tell him, "Real.`,
+    name: "Suzanne Collins",
+  },
 ];
 
 const generateQuoteButton = document.querySelector("button");
