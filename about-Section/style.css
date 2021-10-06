@@ -14,6 +14,7 @@ body {
 .title-container {
  padding: 32px;
  text-align: center;
+ max-width: 1470px;
 }
 
 h2 {
@@ -21,27 +22,41 @@ h2 {
   margin-bottom: 16px;
 }
 
+
 .about-container {
-display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  padding: 32px;
+}
+
+@media (min-width: 1000px){
+  .about-container {
+    display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
 max-width: 1000px;
 margin: auto;
 gap: 0 24px;
+  }
 }
+
+
 
 
 img {
   object-fit: cover;
   border-radius: 4px;
  max-height: 500px;
+ margin-bottom: 32px;
 }
 
 .button-container {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 16px;
+
 }
 
 button {
@@ -50,10 +65,17 @@ button {
   outline: none;
 border: none;
   width: 33.3%;
-  padding: 16px 32px;
-  font-size: 20px;
+  padding: 16px;
+  font-size: 14px;
   transition: 0.3s;
   letter-spacing: 3px;
+}
+
+@media (min-width: 1000px) {
+  button {
+    padding: 16px 32px;
+  font-size: 20px;
+  }
 }
 
 .button-active {
@@ -77,26 +99,40 @@ button:last-child {
   display: none;
 
 }
+ 
+
 
 .info-container {
   background-color: white ;
   border-radius: 4px;
   overflow: hidden;
-  min-height: 500px;
-  min-width: 500px;
+  max-width: 415px;
 
 }
 
 .text-container {
-  padding: 32px;
+  padding: 20px 16px;
+  text-align: center;
+}
 
+@media (min-width: 1000px){
+.text-container {
+  padding: 32px;
+  text-align: left;
+}
 }
 
 h4 {
   color: hsl(209, 61%, 16%);
   font-size: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   letter-spacing: 3px;
+}
+
+@media (min-width: 1000px) {
+  h4 {
+    margin-bottom: 32px;
+  }
 }
 
 .info {
