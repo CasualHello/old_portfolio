@@ -4,7 +4,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnJlYWtmYXN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$10.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     categories: ["breakfast"],
   },
   {
@@ -12,7 +12,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJyZWFrZmFzdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$12.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas",
     categories: ["breakfast", "lunch"],
   },
   {
@@ -20,7 +20,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1581559178851-b99664da71ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnJlYWtmYXN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$5.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet.",
     categories: ["breakfast"],
   },
   {
@@ -28,7 +28,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1604497181015-76590d828b75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fGx1bmNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$15.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas.",
     categories: ["lunch", "dinner"],
   },
   {
@@ -36,7 +36,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1603903631889-b5f3ba4d5b9b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA3fHxsdW5jaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$16.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     categories: ["breakfast", "lunch", "dinner"],
   },
   {
@@ -44,7 +44,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1576511053046-7e445c5b95af?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fGRpbm5lcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$25.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     categories: ["lunch", "dinner"],
   },
   {
@@ -52,7 +52,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hha2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$7.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur.",
     categories: ["shakes"],
   },
   {
@@ -60,7 +60,7 @@ const menu = [
     imgUrl:
       "https://images.unsplash.com/photo-1586707100228-c62482fc9524?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHNoYWtlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     price: "$6.00",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas molestiae neque. Repudiandae itaque, omnis debitis voluptatibus odio fugit?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga voluptas.",
     categories: ["shakes"],
   },
 ];
