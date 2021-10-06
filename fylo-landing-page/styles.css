@@ -14,16 +14,15 @@ body {
 .flex {
   display: flex;
   flex-direction: column;
-  padding: 0 24px 32px 24px;
+ padding:0 24px 32px 24px;
   margin: 0 auto;
   max-width: 500px;
 }
 
 @media (min-width: 1240px) {
   .flex {
-    padding: 64px 64px;
-margin: none;
-max-width: none;
+    padding: 64px;
+max-width: 1240px;
   }
 }
 
@@ -33,9 +32,8 @@ max-width: none;
   flex-direction: row;
   align-items: center;
   list-style-type: none;
-  padding: 24px 0px;
   justify-content: space-evenly;
-  width: 100%;
+  max-width: 1240px;
 }
 
 .navbar {
@@ -52,6 +50,7 @@ max-width: none;
 .navbar__logo img {
   object-fit: cover;
   width: 64px;
+  cursor: pointer;
 }
 
 @media (min-width: 1240px) {
@@ -71,6 +70,13 @@ max-width: none;
   padding: 0 8px;
   font-size: 14px;
 }
+
+.navbar__element a:hover {
+color: hsl(198, 60%, 50%);
+}
+
+
+
 
 @media (min-width: 1240px) {
   .navbar__element a {
@@ -325,7 +331,7 @@ input {
   border-radius: 32px;
   outline: none;
   padding: 16px 40px 16px 24px;
-  border: 2px solid #333;
+  border: none;
   font-size: 12px;
   margin-bottom: 16px;
   line-height: 2em;
@@ -338,7 +344,7 @@ input {
 }
 
 input:focus {
-  border: 2px solid rgb(31, 30, 30);
+  outline: 3px solid hsl(198, 60%, 50%);
 }
 
 .card--big button {
