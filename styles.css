@@ -33,7 +33,6 @@ gap:32px 32px;
 }
 
 .card{
- padding: ;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
  position: relative;
