@@ -35,9 +35,9 @@ body {
   padding: 32px 41px;
   border-radius: 12px;
   margin: 16px;
-  -webkit-box-shadow: 10px 8px 25px -6px rgba(42, 42, 42, 0.42);
-  box-shadow: 10px 8px 25px -6px rgba(42, 42, 42, 0.42);
+  ;
 }
+
 .card__user {
   display: flex;
   margin-bottom: 16px;
@@ -54,6 +54,7 @@ body {
   background-image: url(./index10/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top right;
+  box-shadow: 0px 3px 15px 0px rgba(66, 68, 90, 0.8)
 }
 
 @media (min-width: 1240px) {
@@ -64,6 +65,7 @@ body {
 
 .card--gray {
   background-color: hsl(217, 19%, 35%);
+  box-shadow: 0px 3px 15px 0px rgba(66, 68, 90, 0.8)
 }
 
 @media (min-width: 1240px) {
@@ -74,6 +76,7 @@ body {
 
 .card--white {
   background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 3px 15px 0px rgba(66, 68, 90, 0.3)
 }
 @media (min-width: 1240px) {
   .card--third {
@@ -86,6 +89,7 @@ body {
 
 .card--black {
   background-color: hsl(219, 29%, 14%);
+  box-shadow: 0px 3px 15px 0px rgba(66, 68, 90, 0.8)
 }
 @media (min-width: 1240px) {
   .card--fourth {
