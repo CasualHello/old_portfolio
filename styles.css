@@ -52,6 +52,7 @@ p {
 }
 
 a {
+ outline: none;
  text-align: center;
  text-decoration: none;
  background-color: white;
@@ -61,10 +62,11 @@ a {
  font-size: 18px;
 letter-spacing: 2px;
  color: #00b87a;
- transition: 0.5s;
+ transition: border-radius 0.5s;
  border-radius: 8px;
  cursor: pointer;
 margin-top: auto;
+position: relative;
 }
 
 a:hover {
@@ -74,7 +76,5 @@ position:relative;
 top:3px;
 }
 
-a:active {
- position:relative;
-top:3px;
-}
+
+
