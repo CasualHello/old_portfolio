@@ -57,9 +57,6 @@ body {
   }
 }
 
-  .card__imghero {
-    min-width: 420px;
-  }
 
 .card__imghero img {
   object-fit: cover;
