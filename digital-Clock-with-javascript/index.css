@@ -1,17 +1,22 @@
 :root {
-  --background-color: #fffaf0;
-  --clock-body-color:#32675e;
-  --switch-color:#b3bca8;
-  --switch-text-color: black;
+  --background-color: #E0FCFF;
+  --clock-body-color:#0E7C86;
+  --switch-color:#044E54;
+  --switch-text-color: white;
+  --clock-window-color: white;
+  --display-text-color: black;
+  --button-font-weight:500;
 }
 
 
 .dark-mode {
---background-color:#c7c2b9;
---clock-body-color: #332f28;
---switch-color:#605c54;
---switch-text-color: white;
-
+  --button-font-weight: 600;
+--background-color:#044E54;
+--clock-body-color: #0E7C86;
+--switch-color:#E0FCFF;
+--switch-text-color: black;
+--clock-window-color: rgba(4, 78, 84, 0.6);
+--display-text-color: white;
 }
 
 * {
@@ -20,42 +25,58 @@
   box-sizing: border-box;
 }
 body {
-  background-color:var(--background-color)
+  background-color:var(--background-color);
+
 }
 
-.clock-body {
+.main-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.clock {
+  margin: 0 auto 32px auto;
+  max-width: 500px;
   background-color: var(--clock-body-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 32px 32px;
-  width: 40%;
+border-radius: 8px;
 }
 
 .switch {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -75%);
+  font-weight: var(--button-font-weight);
+letter-spacing: 2px;
+  margin: 0 auto;
   background-color: var(--switch-color);
   border: none;
-  padding: 16px 32px;
+  padding: 16px 40px;
   border-radius: 32px;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  color: var(--switch-text-color)
-  
+  font-size: 20px;
+  color: var(--switch-text-color);
+ opacity: 1
+}
+
+.switch:hover {
+  opacity: 0.9;
+}
+
+.switch:active {
+  top: 3px;
+  position: relative;
 }
 
 .clock-window {
-  background-color: white;
+  background-color:var(--clock-window-color);
   padding: 32px 62px;
   border-radius: 8px;
 }
 
 .days-container {
+  color: var(--display-text-color);
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -65,11 +86,13 @@ body {
 }
 
 .time-container {
+  color: var(--display-text-color);
   display: flex;
   justify-content: center;
   font-family: 'Orbitron', sans-serif;
 }
 
 .clock-display {
-  font-size: 32px;
+  font-size: 28px;
+  letter-spacing: 4px;
 }
