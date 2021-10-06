@@ -22,18 +22,20 @@ h2 {
 }
 
 .about-container {
-padding: 64px;
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-between;
+align-items: center;
+max-width: 1000px;
+margin: auto;
+gap: 0 24px;
 }
 
 
 img {
   object-fit: cover;
-  width: 500px;
-  height: 500px;
   border-radius: 4px;
+ max-height: 500px;
 }
 
 .button-container {
@@ -80,11 +82,14 @@ button:last-child {
   background-color: white ;
   border-radius: 4px;
   overflow: hidden;
-  width: 500px
+  min-height: 500px;
+  min-width: 500px;
+
 }
 
 .text-container {
   padding: 32px;
+
 }
 
 h4 {
