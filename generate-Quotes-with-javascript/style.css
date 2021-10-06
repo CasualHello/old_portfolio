@@ -14,9 +14,7 @@ min-height: 100vh;
 }
 
 .quote-container {
-  min-width: 500px;
   max-width: 550px;
-  height: 400px;
   margin: auto;
   background-color: white;
   padding: 32px 64px;
