@@ -232,8 +232,14 @@ border-bottom: rgb(179, 179, 179) 1px solid;
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
  margin-bottom: 32px;
+}
+
+@media (min-width: 1000px) {
+  .result {
+    font-size: 32px;
+  }
 }
 
 button  {
