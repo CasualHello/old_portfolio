@@ -6,24 +6,25 @@
 }
 
 .site {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #fbf4d7;
   height: 100vh;
+  padding: 32px 16px;
+ 
+  
 }
 
 
 .card {
-  position: absolute;
-background-color: white;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
 padding: 32px;
 border-radius: 8px;
---webkit-box-shadow: 0px 4px 11px 1px rgba(172, 172, 172, 0.4); 
 box-shadow: 0px 4px 11px 1px rgba(172, 172, 172, 0.4);
 }
 
@@ -33,15 +34,23 @@ box-shadow: 0px 4px 11px 1px rgba(172, 172, 172, 0.4);
   background-color: rgb(120, 155, 146);
   border-radius: 50%;
   padding: 6px;
-  transform: translate(-40px, 10px);
+  transform: translate(-30px, 10px);
   position: absolute;
   color: white;
 }
 
+
+@media (min-width: 1000px) {
+  .symbol {
+    transform: translate(-40px, 10px);
+  }
+}
+
+
 h1 {  
   padding-top: 32px;
   text-align: center;
-
+margin-bottom: 64px;
 
 }
 
@@ -56,12 +65,18 @@ margin: auto;
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 16px;
+}
 
+@media (min-width: 1000px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .name {
