@@ -7,29 +7,40 @@
 
 body {
   background-color: #fdf0eb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 .card {
   padding: 64px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
+
+
 .pop__up {
+  width: 100%;
   background-color:rgba(85, 67, 59, 0.3) ;
   text-align: center;
-  width: 75%;
-  font-size: 16px;
+  font-size: 13px;
+  line-height: 24px;
   letter-spacing: 3px;
   padding: 8px;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 32px auto;
   color:rgb(85, 67, 59) ;
   
+}
+
+@media (min-width: 1000px) {
+.pop__up {
+  font-size:16px ;
+}  
 }
 
 .hidden {
@@ -38,8 +49,21 @@ body {
 
 
 h1 {
-  margin-bottom: 64px;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 16px;
+  white-space: nowrap;
 }
+
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+}
+ 
 
 input {
 margin-bottom: 32px;
@@ -55,10 +79,10 @@ input:focus {
   outline: solid 2px #55433b;
 }
 
-.counter{
-  width: 30%;
+.counter{  
+ 
 background-color:#adc0a9;
-padding: 16px 32px;
+padding: 16px;
 margin: 0 auto 32px auto;
 font-size: 20px;
 color: black;
@@ -66,16 +90,25 @@ text-align: center;
 }
 
 .calc {
+  width: 100%;
   background-color:#cda291;
 	border-radius:12px;
 	cursor:pointer;
 	color:black;
-	font-size:17px;
+	font-size:12px;
 	font-weight:bold;
-	padding:16px 31px;
+	padding:16px;
 border: none;
 transition: 0.3s;
 opacity: 1;
+}
+
+@media (min-width: 1000px) {
+  .calc {
+    font-size:15px;
+	font-weight:bold;
+	padding:16px 31px;
+  }
 }
 
 .calc:hover {
