@@ -41,6 +41,11 @@ box-shadow: 0px 1px 17px -3px rgba(0, 0, 0, 0.1);
   color: red;
 }
 
+.pop_up--green {
+  background-color: rgba(0, 128, 0, 0.3);
+  color: green;
+}
+
 .info-pop-up {
   width: 100%;
    text-align: center;
