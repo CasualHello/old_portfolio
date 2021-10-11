@@ -14,27 +14,88 @@
     />
   </head>
   <body>
+    <div class="navbar-mobile-wrapper hidden">
+      <div class="navbar-mobile-vertical-container">
+        <ul class="navbar-vertical"></ul>
+        <li class="close-icon">
+          <img src="images/icon-close.svg" alt="close icon" />
+        </li>
+        <li class="navbar-element">
+          <a class="navbar-link" href="#Collections">Collections</a>
+        </li>
+        <li class="navbar-element">
+          <a class="navbar-link" href="#Men">Men</a>
+        </li>
+        <li class="navbar-element">
+          <a class="navbar-link" href="#Women">Women</a>
+        </li>
+        <li class="navbar-element">
+          <a class="navbar-link" href="#About">About</a>
+        </li>
+        <li class="navbar-element">
+          <a class="navbar-link" href="#Contact">Contact</a>
+        </li>
+      </div>
+    </div>
     <div class="main-container">
       <div class="navbar-container">
         <div class="navbar-element-left">
-          <img src="images/icon-menu.svg" alt="menu-hamburger" />
-          <img src="images/logo.svg" alt="" />
+          <img
+            id="hamburger"
+            class="menu-hamburger"
+            src="images/icon-menu.svg"
+            alt="menu-hamburger"
+          />
+          <img src="images/logo.svg" alt="logo images" class="logo" />
         </div>
         <div class="navbar-element-right">
-          <img src="images/icon-cart.svg" alt="cart-icon" />
-          <img src="images/image-avatar.png" alt="avatar-image" />
+          <span class="cart-number hidden"></span>
+          <img
+            class="cart-navbar-icon"
+            src="images/icon-cart.svg"
+            alt="cart-icon"
+          />
+          <img
+            class="avatar-image"
+            src="images/image-avatar.png"
+            alt="avatar-image"
+          />
+        </div>
+      </div>
+      <div class="cart-pop-up hidden">
+        <div class="cart-title">
+          <p>Cart</p>
+        </div>
+        <div class="cart-container">
+          <span>Your cart is empty</span>
         </div>
       </div>
       <div class="main-hero">
-        <img src="images/image-product-1.jpg" alt="image of shoes" />
+        <img
+          src="images/image-product-1.jpg"
+          alt="image of shoes"
+          class="product-image"
+        />
+
         <div class="slider-container">
-          <img src="images/icon-previous.svg" alt="left arrow" />
-          <img src="images/icon-next.svg" alt="right arrow" />
+          <span class="arrow arrow-container-left">
+            <img
+              src="images/icon-previous.svg"
+              alt="left arrow"
+              class="arrow-left"
+            />
+          </span>
+          <span class="arrow arrow-container-right">
+            <img
+              src="images/icon-next.svg"
+              alt="right arrow"
+              class="arrow-right"
+          /></span>
         </div>
       </div>
       <div class="description-container">
-        <h4 class="company-name">SNEAKER COMPANY</h4>
-        <h2 class="product-name">Fall Limited Edition Sneakers</h2>
+        <h6 class="company-name">SNEAKER COMPANY</h6>
+        <h1 class="product-name">Fall Limited Edition Sneakers</h1>
         <p class="description-text">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
@@ -43,7 +104,7 @@
         <div class="price-container">
           <div class="sale-container">
             <h2 class="new-price">$125.00</h2>
-            <p class="sale-amount"></p>
+            <p class="sale-amount">50%</p>
           </div>
           <div class="old-price-container">
             <p class="old-price">$250.00</p>
@@ -63,10 +124,10 @@
           </div>
         </div>
         <button id="add-button" class="add-button">
-          <img src="images/icon-cart.svg" alt="cart icon" /><span
-            class="button-text"
-            >Add to cart</span
-          >
+          <span class="button-cart-icon">
+            <img src="images/icon-cart.svg" alt="cart-icon" class="cart-icon" />
+          </span>
+          <span class="button-text">Add to cart</span>
         </button>
       </div>
     </div>
