@@ -48,7 +48,7 @@
  background-color: white;
  border-radius: 10px;
  z-index: 2;
- position: fixed;
+ position: absolute;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -71,15 +71,64 @@ box-shadow: 0px 12px 25px -7px rgba(0, 0, 0, 0.6);
 
 .cart-container {
  font-size: 14px;
- padding: 64px;
- display: flex;
- justify-content: center;
+ 
 }
 
-.cart-container span {
+.cart__product-info {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-content: center;
+ margin-bottom: 24px;
+ align-items: center;
+}
+
+.cart__product-name {
+ white-space: nowrap; 
+ overflow: hidden;
+ width: 165px; 
+ margin-bottom: 8px;
+ text-overflow: ellipsis;
+ color: hsl(219, 9%, 45%) ;
+}
+
+.cart__product-amount {
+ display: flex;
+ justify-content: space-around;
+}
+
+.cart-total {
+ font-weight: 700;
+ color: black;
+}
+
+.cart__price, .cart__amount {
+ color: hsl(219, 9%, 45%); 
+ font-weight: 400;
+}
+
+.cart__button {
+ border: none;
+ border-radius: 10px;
+ background-color: hsl(26, 100%, 55%);
+ font-weight: 700;
+ padding: 16px;
+ color:hsl(25, 100%, 94%);
+ letter-spacing: 1px;
+ font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.cart-container div {
  color:hsl(219, 9%, 45%);
  font-weight: 700;
  letter-spacing: 0.5px;
+}
+
+.cart__image--small {
+ width: 15%;
+ object-fit: cover;
+ border-radius: 8px;
 }
 
 .main-hero {
@@ -200,7 +249,7 @@ font-size: 15px;
  color:  hsl(219, 9%, 45%);
  line-height: 28px;
  margin-bottom: 32px;
- font-weight: 00;
+
  text-align: left;
 }
 
@@ -262,6 +311,7 @@ font-size: 15px;
  justify-content: center;
  font-weight: 700;
  margin-bottom: 16px;
+ font-family: 'Kumbh Sans', sans-serif;
 }
 
 
