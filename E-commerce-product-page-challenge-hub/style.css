@@ -5,6 +5,9 @@
  font-family: 'Kumbh Sans', sans-serif;
 
 }
+html {
+ scroll-behavior: smooth;
+}
 
 .navbar-mobile-wrapper {
  background: rgba(0,0,0,0.6);
@@ -25,6 +28,7 @@
 
 .close-icon {
  margin-bottom: 48px;
+ cursor: pointer;
 }
 
 .navbar-element {
@@ -42,6 +46,12 @@
  color: hsl(220, 13%, 13%);
  font-weight: 700;
  text-decoration: none;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+.navbar-link:hover {
+ color: hsl(26, 100%, 55%);
 }
 
 .cart-pop-up {
@@ -108,6 +118,7 @@ box-shadow: 0px 12px 25px -7px rgba(0, 0, 0, 0.6);
 }
 
 .cart__button {
+ cursor: pointer;
  border: none;
  border-radius: 10px;
  background-color: hsl(26, 100%, 55%);
@@ -162,16 +173,18 @@ position: absolute;
 
 .menu-hamburger {
  margin-right: 16px;
- 
+ cursor: pointer;
 }
 
 .logo {
  object-fit: cover;
+ cursor: pointer;
 }
 
 .cart-navbar-icon {
 height: 100%;
  object-fit: cover;
+ cursor: pointer;
 }
 
 .cart-number {
@@ -188,6 +201,7 @@ color: hsl(25, 100%, 94%);
  width: 20%;
  object-fit: cover;
  margin-left: 16px;
+ cursor: pointer;
 }
 
 .product-image {
@@ -205,7 +219,7 @@ color: hsl(25, 100%, 94%);
 
 .arrow {
  z-index: 2;
- 
+ cursor: pointer;
 box-shadow: 0px 5px 22px -5px rgba(0, 0, 0, 0.6);
  display: flex;
  padding: 12px;
@@ -285,12 +299,17 @@ font-size: 15px;
 
 .amount-container {
  display: flex;
+ align-items: center;
  flex-direction: row;
  justify-content: space-between;
  background-color:  hsl(223, 64%, 98%);
- padding: 16px 24px;
  border-radius: 10px;
  margin-bottom: 16px;
+}
+
+.minus-icon-container, .plus-icon-container {
+ cursor: pointer;
+padding: 16px 32px;
 }
 
 .amount-number {
@@ -310,6 +329,7 @@ font-size: 15px;
  flex-direction: row;
  justify-content: center;
  font-weight: 700;
+ cursor: pointer;
  margin-bottom: 16px;
  font-family: 'Kumbh Sans', sans-serif;
 }
