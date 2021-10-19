@@ -19,8 +19,8 @@ const cart = [];
 const menuButton = document.getElementById("hamburger");
 const closeIconButton = document.querySelector(".close-icon");
 const navbarWrapper = document.querySelector(".navbar-mobile-wrapper");
-const addButton = document.querySelector(".plus-icon");
-const subtractButton = document.querySelector(".minus-icon");
+const addButton = document.getElementById("plus-icon-container");
+const subtractButton = document.getElementById("minus-icon-container");
 const amountProductDisplay = document.querySelector(".amount-number");
 const navbarCartIcon = document.querySelector(".cart-navbar-icon");
 const cartPopUpDisplay = document.querySelector(".cart-pop-up");
@@ -29,13 +29,12 @@ const arrowRightButton = document.getElementById("arrow-right");
 const arrowLeftButton = document.getElementById("arrow-left");
 const productImage = document.querySelector(".product-image");
 const addToCartButton = document.getElementById("add-button");
+const cartAmountPopUp = document.querySelector(".cart-number");
 
 let amountProduct = 0;
-let IsCartEmpty = true;
 
 const renderCart = () => {
   cartContainerDisplay.innerHTML = "";
- 
 
   if (cart.length === 0) {
     const div = document.createElement("div");
@@ -50,6 +49,7 @@ const renderCart = () => {
       div.style.padding = `8px 16px 32px 16px`;
       div.style.display = "flex";
       div.style.flexDirection = "column";
+
       div.innerHTML = `<div class="cart__product-info">
       <img
         class="cart__image--small"
@@ -61,15 +61,17 @@ const renderCart = () => {
         <p class="cart__product-name">${product.name}</p>
         <div class="cart__product-amount">
           <span class="cart__price">${
-            product.price - product.price * product.discount
+            product.price - product.price * product.discount + "$"
           }</span
-          ><span class="cart__amount">${amountProduct}</span
+          ><span class="cart__amount">${product.amount}</span
           ><span class="cart-total">${
-            (product.price - product.price * product.discount) * amountProduct
+            (product.price - product.price * product.discount) *
+              product.amount +
+            "$"
           }</span>
         </div>
       </div>
-      <div>
+      <div class="cart__trash--icon-container">
         <img
           class="cart__trash--icon"
           src="images/icon-delete.svg"
@@ -77,27 +79,68 @@ const renderCart = () => {
         />
       </div>
     </div>
-    <button class="cart__button">Checkout</button>`;
+    <a class="cart__button">Checkout</a>`;
       cartContainerDisplay.append(div);
-     
+      const removeIcon = document.querySelector(".cart__trash--icon-container");
+      removeIcon.addEventListener("click", removeProductsFromCart);
     });
+  }
+};
+
+const removeProductsFromCart = () => {
+  if (confirm("You want to remove item from cart?")) {
+    cart.length = 0;
+    renderCart();
+    cartAmountPopUp.classList.add("hidden");
   }
 };
 
 renderCart();
 
 const handleAddToCartButton = () => {
+  const totalPrice =
+    (product.price - product.price * product.discount) * amountProduct;
+
   if (amountProduct === 0) {
     return;
   }
 
-  cart.push({
-    ...product,
-    amount: 1,
-    price: 10,
-  });
+  const index = cart.findIndex((element) => element.id === product.id);
+
+  if (index === -1) {
+    cart.push({
+      ...product,
+      amount: amountProduct,
+    });
+  } else {
+    const oldProduct = cart[index];
+    cart[index] = {
+      ...oldProduct,
+      amount: amountProduct + oldProduct.amount,
+    };
+  }
 
   renderCart();
+
+  const totalCartAmount = cart.reduce(
+    (accumulator, item) => accumulator + item.amount,
+    0
+  );
+  updateCartAmountBubble(totalCartAmount);
+
+  resetAmountDisplay();
+};
+
+const resetAmountDisplay = () => {
+  amountProductDisplay.textContent = 0;
+  amountProduct = 0;
+};
+
+const updateCartAmountBubble = (amount) => {
+  if (cart.length) {
+    cartAmountPopUp.textContent = amount;
+    cartAmountPopUp.classList.remove("hidden");
+  }
 };
 
 const showNextPicture = () => {
