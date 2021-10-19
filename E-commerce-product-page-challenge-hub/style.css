@@ -112,6 +112,13 @@ box-shadow: 0px 12px 25px -7px rgba(0, 0, 0, 0.6);
  color: black;
 }
 
+
+
+.cart__trash--icon-container {
+ padding: 12px;
+ cursor: pointer;
+}
+
 .cart__price, .cart__amount {
  color: hsl(219, 9%, 45%); 
  font-weight: 400;
@@ -192,9 +199,9 @@ border-radius:6px;
 color: hsl(25, 100%, 94%);
  font-size: 8px;
  background-color:hsl(26, 100%, 55%);
- padding: 6px;
+ padding: 4px 6px;
  z-index: 1;
- transform: translate(25px, -17px);
+ transform: translate(24px, -10px);
 }
 
 .avatar-image {
