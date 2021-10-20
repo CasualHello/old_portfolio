@@ -94,10 +94,22 @@ const renderCart = () => {
   }
 };
 
+const changeMainPictureProduct = (index) => {
+  productImage.src = product.images[index];
+  console.log(product.images[index]);
+};
+
 const renderGallery = () => {
   product.imagesForGallery.forEach((image, index) => {
     const img = document.createElement("img");
     img.src = product.imagesForGallery[index];
+    img.addEventListener("click", (event) => {
+      document
+        .querySelectorAll(".image-styling")
+        .forEach((el) => el.classList.remove("image-styling"));
+      event.target.classList.add("image-styling");
+      changeMainPictureProduct(index);
+    });
     galleryContainer.appendChild(img);
   });
 };

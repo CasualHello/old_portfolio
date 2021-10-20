@@ -582,6 +582,31 @@ align-items: center;
  border-radius:8px ;
 }
 
+.gallery-container img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: black;
+}
+ 
+ }
+
+ .text {
+   font-family: Arial;
+   font-size: 2em;
+   color: white;
+   text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
+   margin: 0;
+   position: absolute;
+}
+
+.image-styling {
+  outline: 2px solid hsl(26, 100%, 55%);
 }
 
 @media (min-width: 1240px) {
