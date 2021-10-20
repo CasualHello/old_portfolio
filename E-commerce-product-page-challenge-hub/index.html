@@ -16,7 +16,6 @@
   <body>
     <div class="navbar-mobile-wrapper hidden">
       <div class="navbar-mobile-vertical-container">
-        <ul class="navbar-vertical"></ul>
         <li class="close-icon">
           <img src="images/icon-close.svg" alt="close icon" />
         </li>
@@ -37,96 +36,138 @@
         </li>
       </div>
     </div>
-    <div class="main-container">
-      <div class="navbar-container">
-        <div class="navbar-element-left">
-          <img
-            id="hamburger"
-            class="menu-hamburger"
-            src="images/icon-menu.svg"
-            alt="menu-hamburger"
-          />
-          <img src="images/logo.svg" alt="logo images" class="logo" />
+    <div class="container__for-screen--bg">
+      <div class="main-container">
+        <div class="navbar-container">
+          <div class="navbar-element-left">
+            <img
+              id="hamburger"
+              class="menu-hamburger"
+              src="images/icon-menu.svg"
+              alt="menu-hamburger"
+            />
+            <img src="images/logo.svg" alt="logo images" class="logo" />
+            <ul class="navbar-list-screen--bg">
+              <li class="navbar-list-element-screen--bg">Collections</li>
+              <li class="navbar-list-element-screen--bg">Men</li>
+              <li class="navbar-list-element-screen--bg">Women</li>
+              <li class="navbar-list-element-screen--bg">About</li>
+              <li class="navbar-list-element-screen--bg">Contact</li>
+            </ul>
+          </div>
+          <div class="navbar-element-right">
+            <span class="cart-number hidden"></span>
+            <img
+              class="cart-navbar-icon"
+              src="images/icon-cart.svg"
+              alt="cart-icon"
+            />
+            <img
+              class="avatar-image"
+              src="images/image-avatar.png"
+              alt="avatar-image"
+            />
+          </div>
         </div>
-        <div class="navbar-element-right">
-          <span class="cart-number hidden"></span>
-          <img
-            class="cart-navbar-icon"
-            src="images/icon-cart.svg"
-            alt="cart-icon"
-          />
-          <img
-            class="avatar-image"
-            src="images/image-avatar.png"
-            alt="avatar-image"
-          />
+        <div class="cart-pop-up hidden">
+          <div class="cart-title">
+            <p>Cart</p>
+          </div>
+          <div class="cart-container"></div>
         </div>
-      </div>
-      <div class="cart-pop-up hidden">
-        <div class="cart-title">
-          <p>Cart</p>
-        </div>
-        <div class="cart-container"></div>
-      </div>
-      <div class="main-hero">
-        <img
-          src="images/image-product-1.jpg"
-          alt="image of shoes"
-          class="product-image"
-        />
+        <div class="container-product--bgscreen">
+          <div class="main-hero">
+            <img
+              src="images/image-product-1.jpg"
+              alt="image of shoes"
+              class="product-image"
+            />
 
-        <div class="slider-container">
-          <span id="arrow-left" class="arrow arrow-container-left">
+            <div class="slider-container">
+              <span id="arrow-left" class="arrow arrow-container-left">
+                <img
+                  src="images/icon-previous.svg"
+                  alt="left arrow"
+                  class="arrow-left"
+                />
+              </span>
+              <span id="arrow-right" class="arrow arrow-container-right">
+                <img
+                  src="images/icon-next.svg"
+                  alt="right arrow"
+                  class="arrow-right"
+              /></span>
+            </div>
+          </div>
+          <div class="description-container">
+            <h6 class="company-name">SNEAKER COMPANY</h6>
+            <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+            <p class="description-text">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price-container">
+              <div class="sale-container">
+                <h2 class="new-price">$125.00</h2>
+                <p class="sale-amount">50%</p>
+              </div>
+              <div class="old-price-container">
+                <p class="old-price">$250.00</p>
+              </div>
+            </div>
+            <div class="container-button--bgscreen">
+              <div class="amount-container">
+                <div class="minus-icon-container" id="minus-icon-container">
+                  <img
+                    class="minus-icon"
+                    src="images/icon-minus.svg"
+                    alt="minus icon"
+                  />
+                </div>
+                <div><span class="amount-number">0</span></div>
+                <div class="plus-icon-container" id="plus-icon-container">
+                  <img
+                    class="plus-icon"
+                    src="images/icon-plus.svg"
+                    alt="plus icon"
+                  />
+                </div>
+              </div>
+              <button id="add-button" class="add-button">
+                <span class="button-cart-icon">
+                  <img
+                    src="images/icon-cart.svg"
+                    alt="cart-icon"
+                    class="cart-icon"
+                  />
+                </span>
+                <span class="button-text">Add to cart</span>
+              </button>
+            </div>
+          </div>
+          <div class="gallery-container">
             <img
-              src="images/icon-previous.svg"
-              alt="left arrow"
-              class="arrow-left"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="picture of product"
             />
-          </span>
-          <span id="arrow-right" class="arrow arrow-container-right">
+
             <img
-              src="images/icon-next.svg"
-              alt="right arrow"
-              class="arrow-right"
-          /></span>
-        </div>
-      </div>
-      <div class="description-container">
-        <h6 class="company-name">SNEAKER COMPANY</h6>
-        <h1 class="product-name">Fall Limited Edition Sneakers</h1>
-        <p class="description-text">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
-        </p>
-        <div class="price-container">
-          <div class="sale-container">
-            <h2 class="new-price">$125.00</h2>
-            <p class="sale-amount">50%</p>
-          </div>
-          <div class="old-price-container">
-            <p class="old-price">$250.00</p>
-          </div>
-        </div>
-        <div class="amount-container">
-          <div class="minus-icon-container" id="minus-icon-container">
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="picture of product"
+            />
+
             <img
-              class="minus-icon"
-              src="images/icon-minus.svg"
-              alt="minus icon"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="picture of product"
+            />
+
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="picture of product"
             />
           </div>
-          <div><span class="amount-number">0</span></div>
-          <div class="plus-icon-container" id="plus-icon-container">
-            <img class="plus-icon" src="images/icon-plus.svg" alt="plus icon" />
-          </div>
         </div>
-        <button id="add-button" class="add-button">
-          <span class="button-cart-icon">
-            <img src="images/icon-cart.svg" alt="cart-icon" class="cart-icon" />
-          </span>
-          <span class="button-text">Add to cart</span>
-        </button>
       </div>
     </div>
     <script src="main.js"></script>
