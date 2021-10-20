@@ -12,6 +12,12 @@ const product = {
     "images/image-product-3.jpg",
     "images/image-product-4.jpg",
   ],
+  imagesForGallery: [
+    "images/image-product-1-thumbnail.jpg",
+    "images/image-product-2-thumbnail.jpg",
+    "images/image-product-3-thumbnail.jpg",
+    "images/image-product-4-thumbnail.jpg",
+  ],
 };
 
 const cart = [];
@@ -30,6 +36,7 @@ const arrowLeftButton = document.getElementById("arrow-left");
 const productImage = document.querySelector(".product-image");
 const addToCartButton = document.getElementById("add-button");
 const cartAmountPopUp = document.querySelector(".cart-number");
+const galleryContainer = document.querySelector(".gallery-container");
 
 let amountProduct = 0;
 
@@ -87,6 +94,14 @@ const renderCart = () => {
   }
 };
 
+const renderGallery = () => {
+  product.imagesForGallery.forEach((image, index) => {
+    const img = document.createElement("img");
+    img.src = product.imagesForGallery[index];
+    galleryContainer.appendChild(img);
+  });
+};
+
 const removeProductsFromCart = () => {
   if (confirm("You want to remove item from cart?")) {
     cart.length = 0;
@@ -96,6 +111,7 @@ const removeProductsFromCart = () => {
 };
 
 renderCart();
+renderGallery();
 
 const handleAddToCartButton = () => {
   const totalPrice =
