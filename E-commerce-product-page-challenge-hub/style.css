@@ -63,12 +63,14 @@ html {
  flex-direction: column;
  justify-content: center;
  align-content: center;
- top: 58px;
+ top: 48px;
  left: 0;
  right: 0;
  margin: 10px;
 box-shadow: 0px 12px 25px -7px rgba(0, 0, 0, 0.6);
-
+max-width: 500px;
+left: 10px;
+right: 10px;
 }
 
 @media (min-width: 1240px) {
@@ -77,6 +79,7 @@ box-shadow: 0px 12px 25px -7px rgba(0, 0, 0, 0.6);
   left: auto;
   top: 94px;
   margin: 0px 130px;
+  
  }
 }
 
@@ -177,7 +180,6 @@ box-shadow: 0px 12px 25px -7px rgba(0, 0, 0, 0.6);
 }
 
 .main-container {
- min-width: 365px;
  display: flex;
  flex-direction: column;
 max-width: 500px;
@@ -209,7 +211,7 @@ margin: auto;
 
 @media (min-width: 1240px) {
  .navbar-container {
-  padding: 40px 32px;
+  padding: 24px 32px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
  }
 }
@@ -266,6 +268,7 @@ margin: auto;
  .navbar-list-element-screen--bg {
   margin-right: 32px;
   transition: 0.3s;
+  cursor: pointer;
  }
  
  .navbar-list-element-screen--bg:hover {
@@ -513,6 +516,13 @@ padding: 16px 32px;
 
 .amount-number {
  font-weight: 700;
+}
+
+@media (min-width: 1240px) {
+  .amount-number {
+    display: block;
+    min-width: 30px;
+  }
 }
 
 .add-button {
